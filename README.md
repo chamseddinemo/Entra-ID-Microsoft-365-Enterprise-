@@ -107,7 +107,7 @@ The environment simulates a small company with departments:
 - IT
 - HR
 - Finance
-- Training (TR)
+- Traveaux Publics (TR)
 
 ## 🧱 Core Concepts Covered
 - User lifecycle management
