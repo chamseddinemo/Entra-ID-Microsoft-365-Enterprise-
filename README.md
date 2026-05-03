@@ -1,216 +1,59 @@
-# Entra-ID-Microsoft-365-Enterprise-
-Entra ID &amp; Microsoft 365 Enterprise 
+# Entra ID & Microsoft 365 Enterprise Lab
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<title>Entra ID & Microsoft 365 Enterprise Lab</title>
-</head>
-<body>
+Laboratoire documenté : tenant Entra ID, utilisateurs, groupes, licences, MFA / Conditional Access, rôles et scénarios helpdesk.
 
-<h1>🧪 Entra ID & Microsoft 365 Enterprise Lab</h1>
+## État du dépôt vs README
 
-<h2>📁 Repository Structure 📸</h2>
-👉 📸 Screenshot : structure GitHub du repo
+| Élément | Avant | Maintenant |
+|--------|-------|------------|
+| Arborescence décrite dans le README | Oui (schéma uniquement) | Dossiers et fichiers `.md` présents |
+| Captures / preuves | Références « 📸 » | Dossiers `screenshots/` et `09-Logs-Screenshots-Evidence/` prêts à recevoir les fichiers |
+| Tableaux métier | Partiels dans le README | Tableaux dédiés par section |
 
-<pre>
-EntraID-M365-Enterprise-Lab/
-│
-├── README.md
-│
-├── 00-Project-Overview/
-│   ├── architecture-diagram.png
-│   ├── objectives.md
-│   ├── environment-setup.md
-│
-├── 01-Tenant-Setup/
-│   ├── tenant-creation.md
-│   ├── issues-encountered.md
-│   ├── screenshots/
-│
-├── 02-Users-Management/
-│   ├── users-created.md
-│   ├── user-roles-table.md
-│   ├── lifecycle-create-disable-delete.md
-│   ├── screenshots/
-│
-├── 03-Groups-Management/
-│   ├── groups-structure.md
-│   ├── membership-mapping.md
-│   ├── owners-configuration.md
-│   ├── screenshots/
-│
-├── 04-Licensing-Microsoft365/
-│   ├── license-assignment.md
-│   ├── license-removal.md
-│   ├── license-impact-analysis.md
-│   ├── screenshots/
-│
-├── 05-MFA-ConditionalAccess/
-│   ├── mfa-setup.md
-│   ├── conditional-access-policy.md
-│   ├── testing-mfa.md
-│   ├── screenshots/
-│
-├── 06-Security-Roles/
-│   ├── role-assignment.md
-│   ├── helpdesk-admin-role.md
-│   ├── role-comparison.md
-│   ├── screenshots/
-│
-├── 07-Helpdesk-Scenarios/
-│   ├── scenario-01-login-issue.md
-│   ├── scenario-02-mfa-block.md
-│   ├── scenario-03-license-missing.md
-│   ├── scenario-04-group-access.md
-│   ├── scenario-05-account-disabled.md
-│
-├── 08-Troubleshooting-Guide/
-│   ├── decision-tree.md
-│   ├── common-errors.md
-│   ├── resolution-steps.md
-│
-├── 09-Logs-Screenshots-Evidence/
-│   ├── users/
-│   ├── groups/
-│   ├── mfa/
-│   ├── licensing/
-│   ├── errors/
-│
-└── 10-Optional-Automation/
-   ├── powershell-users.ps1
-   ├── powershell-groups.ps1
-   ├── license-check.ps1
-</pre>
+## Navigation rapide
+
+| Section | Contenu |
+|---------|---------|
+| [00-Project-Overview](00-Project-Overview/objectives.md) | Objectifs, prérequis |
+| [01-Tenant-Setup](01-Tenant-Setup/tenant-creation.md) | Création tenant, problèmes rencontrés |
+| [02-Users-Management](02-Users-Management/users-created.md) | Utilisateurs, cycle de vie |
+| [03-Groups-Management](03-Groups-Management/groups-structure.md) | Groupes, appartenances |
+| [04-Licensing-Microsoft365](04-Licensing-Microsoft365/license-assignment.md) | Attribution / retrait licences |
+| [05-MFA-ConditionalAccess](05-MFA-ConditionalAccess/mfa-setup.md) | MFA et CA |
+| [06-Security-Roles](06-Security-Roles/role-assignment.md) | Rôles administrateur |
+| [07-Helpdesk-Scenarios](07-Helpdesk-Scenarios/scenario-01-login-issue.md) | Cas support |
+| [08-Troubleshooting-Guide](08-Troubleshooting-Guide/decision-tree.md) | Dépannage |
+| [09-Logs-Screenshots-Evidence](09-Logs-Screenshots-Evidence/README.md) | Preuves / captures |
+| [10-Optional-Automation](10-Optional-Automation/README.md) | Placeholder automation (sans scripts fournis ici) |
+
+## Objectif du projet
+
+Simulation d’un environnement **helpdesk / administrateur junior** avec Microsoft Entra ID et Microsoft 365.
+
+## Technologies
+
+- Microsoft Entra ID  
+- Microsoft 365  
+- Conditional Access  
+- MFA  
+- RBAC Entra  
+
+## Entreprise fictive (départements)
+
+IT · RH · Finance · Travaux publics (TR)
+
+## Chaîne logique d’accès
+
+```
+Utilisateurs → Groupes → Licences → Rôles → Accès
+                      ↓
+         Conditional Access (MFA)
+```
+
+## Structure du dépôt
+
+Voir les dossiers numérotés `00-` à `10-` à la racine ; chaque dossier contient des fichiers Markdown et des sous-dossiers `screenshots/` lorsque des captures sont attendues.
 
 ---
 
-<h2>📘 README 📸</h2>
-👉 📸 Screenshot : README affiché sur GitHub
-
-<pre>
-# 🧪 Entra ID & Microsoft 365 Enterprise Lab
-
-## 🎯 Objective
-This project simulates a real IT Help Desk / Junior Azure Administrator environment using Microsoft Entra ID and Microsoft 365.
-
-## 🧰 Technologies
-- Microsoft Entra ID
-- Microsoft 365
-- Conditional Access
-- MFA (Multi-Factor Authentication)
-- Role-based Access Control (RBAC)
-
-## 🏢 Scenario
-The environment simulates a small company with departments:
-- IT
-- HR
-- Finance
-- Traveaux Publics (TR)
-
-## 🧱 Core Concepts Covered
-- User lifecycle management
-- Group-based access control
-- License management
-- MFA implementation
-- Security roles assignment
-- Help desk troubleshooting
-
-## 🧪 Key Skills Demonstrated
-- Identity management
-- Access control
-- Security configuration
-- Incident troubleshooting
-- IT support scenarios
-</pre>
-
----
-
-<h2>🧠 Architecture Logic 📸</h2>
-👉 📸 Screenshot : diagram logique (users → groups → access)
-
-<pre>
-Users → Groups → Licenses → Roles → Access
-           ↓
-    Conditional Access (MFA)
-</pre>
-
----
-
-<h2>👥 Enterprise Structure 📸</h2>
-👉 📸 Screenshot : users + groupes dans Entra ID
-
-<table border="1">
-<tr>
-<th>Department</th>
-<th>User</th>
-<th>Group</th>
-<th>License</th>
-<th>Role</th>
-</tr>
-<tr>
-<td>IT</td>
-<td>ItUser</td>
-<td>IT</td>
-<td>✔</td>
-<td>Helpdesk Admin</td>
-</tr>
-<tr>
-<td>HR</td>
-<td>RhUser</td>
-<td>HR</td>
-<td>✔</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>Finance</td>
-<td>financeuser</td>
-<td>Finance</td>
-<td>✔</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>TR</td>
-<td>TrUser</td>
-<td>TR</td>
-<td>✔</td>
-<td>❌</td>
-</tr>
-</table>
-
----
-
-<h2>🔐 MFA (Conditional Access) 📸</h2>
-👉 📸 Screenshot : policy MFA configurée
-
-<ul>
-<li>All users or IT group</li>
-<li>Require MFA</li>
-<li>All cloud apps</li>
-</ul>
-
----
-
-<h2>🧪 Helpdesk Scenarios 📸</h2>
-👉 📸 Screenshot : exemples incidents / résolution
-
-<ul>
-<li>Login issue → reset password</li>
-<li>MFA blocked → reset MFA</li>
-<li>No license → assign Microsoft 365 license</li>
-<li>No access → fix group membership</li>
-<li>Account disabled → enable sign-in</li>
-</ul>
-
----
-
-<h2>🚨 Troubleshooting Flow 📸</h2>
-👉 📸 Screenshot : flow troubleshooting (diagram ou notes)
-
-<pre>
-Issue → Identify → Check (User / Group / License / MFA) → Fix → Test → Resolve
-</pre>
-
-</body>
-</html>
+*Complétez les tableaux avec vos valeurs réelles (UPN, IDs de groupe, noms de stratégies CA, etc.) après chaque étape du lab.*
