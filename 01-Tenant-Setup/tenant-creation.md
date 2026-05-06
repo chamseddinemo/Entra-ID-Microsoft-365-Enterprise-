@@ -1,19 +1,7 @@
 # Création et configuration du tenant
 
-## Informations tenant
-
 | Champ | Valeur |
 |-------|--------|
-| Nom du tenant | |
-| Domaine `.onmicrosoft.com` | |
-| Domaine personnalisé (si ajouté) | |
+| Nom du tenant | CHAMSchamse |
+| Domaine `.onmicrosoft.com` | ALPHA960 |
 | Région principale | |
-
-## Étapes réalisées
-
-| Étape | Statut | Date | Notes |
-|-------|--------|------|-------|
-| Création du tenant | ☐ | | |
-| Compte Global Administrator | ☐ | | |
-| Domaine personnalisé | ☐ | | |
-| Premier utilisateur admin MFA | ☐ | | |
