@@ -1,59 +1,76 @@
-# Entra ID & Microsoft 365 Enterprise Lab
+# Portfolio Help Desk Microsoft 365 (Office 365)
 
-Laboratoire documenté : tenant Entra ID, utilisateurs, groupes, licences, MFA / Conditional Access, rôles et scénarios helpdesk.
+Projet pratique orienté **poste Help Desk / Support IT** pour montrer un workflow complet dans un environnement Microsoft 365:
 
-## État du dépôt vs README
+- creation et configuration d'un tenant
+- gestion des utilisateurs et groupes
+- attribution des licences Microsoft 365
+- securisation avec MFA et Conditional Access
+- resolution d'incidents utilisateurs
 
-| Élément | Avant | Maintenant |
-|--------|-------|------------|
-| Arborescence décrite dans le README | Oui (schéma uniquement) | Dossiers et fichiers `.md` présents |
-| Captures / preuves | Références « 📸 » | Dossiers `screenshots/` et `09-Logs-Screenshots-Evidence/` prêts à recevoir les fichiers |
-| Tableaux métier | Partiels dans le README | Tableaux dédiés par section |
+Ce depot est ecrit pour etre **simple a lire par un recruteur**: chaque section correspond a une competence terrain, avec preuves visuelles dans un dossier `images/`.
 
-## Navigation rapide
+## Profil cible
 
-| Section | Contenu |
-|---------|---------|
-| [00-Project-Overview](00-Project-Overview/objectives.md) | Objectifs, prérequis |
-| [01-Tenant-Setup](01-Tenant-Setup/tenant-creation.md) | Création tenant, problèmes rencontrés |
-| [02-Users-Management](02-Users-Management/users-created.md) | Utilisateurs, cycle de vie |
-| [03-Groups-Management](03-Groups-Management/groups-structure.md) | Groupes, appartenances |
-| [04-Licensing-Microsoft365](04-Licensing-Microsoft365/license-assignment.md) | Attribution / retrait licences |
-| [05-MFA-ConditionalAccess](05-MFA-ConditionalAccess/mfa-setup.md) | MFA et CA |
-| [06-Security-Roles](06-Security-Roles/role-assignment.md) | Rôles administrateur |
-| [07-Helpdesk-Scenarios](07-Helpdesk-Scenarios/scenario-01-login-issue.md) | Cas support |
-| [08-Troubleshooting-Guide](08-Troubleshooting-Guide/decision-tree.md) | Dépannage |
-| [09-Logs-Screenshots-Evidence](09-Logs-Screenshots-Evidence/README.md) | Preuves / captures |
-| [10-Optional-Automation](10-Optional-Automation/README.md) | Placeholder automation (sans scripts fournis ici) |
+Ce projet demontre des competences pour:
 
-## Objectif du projet
+- Help Desk N1/N2
+- Technicien support Microsoft 365
+- Junior IT Administrator (M365)
 
-Simulation d’un environnement **helpdesk / administrateur junior** avec Microsoft Entra ID et Microsoft 365.
+## Competences demontrees
 
-## Technologies
+- Administration des comptes utilisateurs (creation, reset mot de passe, blocage/deblocage)
+- Gestion des groupes et de l'acces par role
+- Attribution/retrait de licences Microsoft 365
+- Application de MFA et politiques Conditional Access
+- Diagnostic et resolution d'incidents courants
+- Documentation claire et communication support
 
-- Microsoft Entra ID  
-- Microsoft 365  
-- Conditional Access  
-- MFA  
-- RBAC Entra  
+## Navigation rapide (version recruteur)
 
-## Entreprise fictive (départements)
+| Section | Objectif metier |
+|---------|-----------------|
+| [00-Project-Overview](00-Project-Overview/objectives.md) | Contexte, objectifs, perimetre du role Help Desk |
+| [01-Tenant-Setup](01-Tenant-Setup/tenant-creation.md) | Mise en place de l'environnement Microsoft 365 |
+| [02-Users-Management](02-Users-Management/users-created.md) | Gestion du cycle de vie des utilisateurs |
+| [03-Groups-Management](03-Groups-Management/groups-structure.md) | Organisation des groupes et droits d'acces |
+| [04-Licensing-Microsoft365](04-Licensing-Microsoft365/license-assignment.md) | Gestion des licences Microsoft 365 |
+| [05-MFA-ConditionalAccess](05-MFA-ConditionalAccess/mfa-setup.md) | Securisation des connexions |
+| [06-Security-Roles](06-Security-Roles/role-assignment.md) | Delegation de roles admin avec moindre privilege |
+| [07-Helpdesk-Scenarios](07-Helpdesk-Scenarios/scenario-01-login-issue.md) | Cas reels de tickets Help Desk |
+| [08-Troubleshooting-Guide](08-Troubleshooting-Guide/decision-tree.md) | Methodologie de depannage |
+| [09-Logs-Screenshots-Evidence](09-Logs-Screenshots-Evidence/README.md) | Journal des actions + preuves |
+| [10-Optional-Automation](10-Optional-Automation/README.md) | Automatisation (bonus) |
 
-IT · RH · Finance · Travaux publics (TR)
+## Ce que doit voir un recruteur rapidement
 
-## Chaîne logique d’accès
+1. **Probleme support** -> 2. **Analyse** -> 3. **Resolution** -> 4. **Preuve (capture)** -> 5. **Bonne pratique**
 
-```
-Utilisateurs → Groupes → Licences → Rôles → Accès
-                      ↓
-         Conditional Access (MFA)
-```
+Chaque dossier contient:
 
-## Structure du dépôt
+- des fichiers `.md` avec la procedure
+- un dossier `images/` pour les captures d'ecran de la section
 
-Voir les dossiers numérotés `00-` à `10-` à la racine ; chaque dossier contient des fichiers Markdown et des sous-dossiers `screenshots/` lorsque des captures sont attendues.
+## Structure des preuves visuelles
 
----
+Convention conseillee pour nommer les captures:
 
-*Complétez les tableaux avec vos valeurs réelles (UPN, IDs de groupe, noms de stratégies CA, etc.) après chaque étape du lab.*
+- `01-portail-admin-overview.png`
+- `02-user-created-success.png`
+- `03-license-assigned-e3.png`
+- `04-mfa-challenge-policy.png`
+- `05-ticket-login-resolved.png`
+
+## Environnement technique
+
+- Microsoft 365 Admin Center
+- Microsoft Entra Admin Center
+- Exchange Admin Center (si utilise)
+- MFA / Conditional Access
+- RBAC Entra ID
+
+## Note
+
+Ce repository est volontairement axe sur les operations **Office 365 / Microsoft 365** utiles au quotidien d'un Help Desk.  
+Pense a remplir les valeurs reelles (UPN, groupes, SKU de licence, nom des policies) apres chaque manipulation.
