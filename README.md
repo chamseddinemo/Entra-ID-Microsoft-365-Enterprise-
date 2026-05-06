@@ -1,22 +1,12 @@
-# Portfolio Help Desk Microsoft 365 (Office 365)
+# Microsoft 365 (Office 365)
 
-Projet pratique orienté **poste Help Desk / Support IT** pour montrer un workflow complet dans un environnement Microsoft 365:
+un workflow complet dans un environnement Microsoft 365:
 
 - creation et configuration d'un tenant
 - gestion des utilisateurs et groupes
 - attribution des licences Microsoft 365
 - securisation avec MFA et Conditional Access
 - resolution d'incidents utilisateurs
-
-Ce depot est ecrit pour etre **simple a lire par un recruteur**: chaque section correspond a une competence terrain, avec preuves visuelles dans un dossier `images/`.
-
-## Profil cible
-
-Ce projet demontre des competences pour:
-
-- Help Desk N1/N2
-- Technicien support Microsoft 365
-- Junior IT Administrator (M365)
 
 ## Competences demontrees
 
@@ -43,34 +33,9 @@ Ce projet demontre des competences pour:
 | [09-Logs-Screenshots-Evidence](09-Logs-Screenshots-Evidence/README.md) | Journal des actions + preuves |
 | [10-Optional-Automation](10-Optional-Automation/README.md) | Automatisation (bonus) |
 
-## Ce que doit voir un recruteur rapidement
-
-1. **Probleme support** -> 2. **Analyse** -> 3. **Resolution** -> 4. **Preuve (capture)** -> 5. **Bonne pratique**
-
-Chaque dossier contient:
-
-- des fichiers `.md` avec la procedure
-- un dossier `images/` pour les captures d'ecran de la section
-
-## Structure des preuves visuelles
-
-Convention conseillee pour nommer les captures:
-
-- `01-portail-admin-overview.png`
-- `02-user-created-success.png`
-- `03-license-assigned-e3.png`
-- `04-mfa-challenge-policy.png`
-- `05-ticket-login-resolved.png`
-
 ## Environnement technique
 
 - Microsoft 365 Admin Center
 - Microsoft Entra Admin Center
-- Exchange Admin Center (si utilise)
 - MFA / Conditional Access
 - RBAC Entra ID
-
-## Note
-
-Ce repository est volontairement axe sur les operations **Office 365 / Microsoft 365** utiles au quotidien d'un Help Desk.  
-Pense a remplir les valeurs reelles (UPN, groupes, SKU de licence, nom des policies) apres chaque manipulation.
