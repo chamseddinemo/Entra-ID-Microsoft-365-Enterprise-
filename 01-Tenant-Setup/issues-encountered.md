@@ -1,4 +1,4 @@
-# Problèmes rencontrés — tenant
+# Problèmes rencontrés 
 
 | # | Symptôme | Cause probable | Résolution | Capture |
 |---|----------|----------------|------------|---------|
