@@ -8,4 +8,3 @@ Ce dossier est réservé à des scripts **que vous ajoutez vous-même** (par exe
 | `powershell-groups.ps1` | Groupes | À créer par vous si besoin |
 | `license-check.ps1` | Inventaire licences | À créer par vous si besoin |
 
-_Aucun script exécutable n’est fourni ici conformément à votre demande de ne pas générer de « code » applicatif._
