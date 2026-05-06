@@ -13,7 +13,7 @@
 
 | Utilisateur | Action testée | Résultat | Date |
 |-------------|---------------|----------|------|
-| | Création | | |
-| | Désactivation | | |
-| | Réactivation | | |
-| | Suppression | | |
+| IT.USER | Création | Positif | 2026/05/05 |
+| IT.USER | Désactivation | Positif | 2026/05/05 |
+| IT.USER | Réactivation | Positif | 2026/05/05 |
+| IT.USER | Suppression | Positif | 2026/05/05 |
