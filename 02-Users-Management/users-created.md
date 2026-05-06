@@ -3,6 +3,6 @@
 | Display name | UPN | Département | Groupes | Licence | Compte activé |
 |--------------|-----|-------------|---------|---------|---------------|
 | ItUser | | IT | | ☐ | ☐ |
-| RhUser | | HR | | ☐ | ☐ |
+| RhUser | | RH | | ☐ | ☐ |
 | financeuser | | Finance | | ☐ | ☐ |
 | TrUser | | TR | | ☐ | ☐ |
