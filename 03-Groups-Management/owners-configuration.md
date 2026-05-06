@@ -2,7 +2,7 @@
 
 | Groupe | Propriétaire(s) | Peut gérer membres | Notes |
 |--------|-----------------|---------------------|-------|
-| IT | | ☐ | |
-| HR | | ☐ | |
-| Finance | | ☐ | |
-| TR | | ☐ | |
+| IT | IT.MANAGER | ☐ | |
+| HR | RH.MANAGER | ☐ | |
+| Finance | Finance.MANAGER | ☐ | |
+| TR | TR.MANAGER | ☐ | |
