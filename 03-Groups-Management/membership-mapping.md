@@ -7,8 +7,3 @@
 | Finance | financeuser | Membre | |
 | TR | TrUser | Membre | |
 
-## Applications ou ressources liées (optionnel)
-
-| Groupe | Application cloud | Type d’affectation |
-|--------|---------------------|---------------------|
-| | | |
