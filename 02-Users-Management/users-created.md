@@ -6,5 +6,3 @@
 | RhUser | | HR | | ☐ | ☐ |
 | financeuser | | Finance | | ☐ | ☐ |
 | TrUser | | TR | | ☐ | ☐ |
-
-_Adaptez les lignes selon vos comptes réels._
